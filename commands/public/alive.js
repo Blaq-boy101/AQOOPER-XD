@@ -18,15 +18,16 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
 	const platform = `${process.platform} (${process.arch})`;
 
 	const response =
-		`*👋🏻 Hello ${updateName}*\n\n` +
-		`*🎾 Eva is Online!*\n` +
-		`*🟢 Response Time:* ${
-			responseTime >= 1000 ? `${responseTimeInSeconds.toFixed(2)}s` : `${responseTime.toFixed(2)}ms`
+		`*👋🏻 ʜᴇʟʟᴏ ${updateName}*\n\n` +
+		`*🎾 ᴀǫᴏᴏᴘᴇʀ is Online!*\n` +
+		`*🟢 ʟᴀᴛᴇɴᴄʏ:* ${
+			responsetime >= 1000 ? `${responseTimeInSeconds.toFixed(2)}s` : `${responseTime.toFixed(2)}ms`
 		}\n` +
-		`*⏱️ Uptime:* ${simpleUptime}\n` +
-		`*🧠 RAM Usage:* ${usedMB} MB\n` +
-		`*🛠️ Node.js:* ${nodeVersion}\n` +
-		`*🌍 Platform:* ${platform}`;
+		`*⏱️ ᴜᴘᴛɪᴍᴇ:* ${simpleUptime}\n` +
+		`*🧠 ʀᴀᴍ ᴜsᴀɢᴇ:* ${usedMB} MB\n` +
+		`*🛠️ ᴠᴇʀsɪᴏɴ:* ${nodeVersion}\n` +
+		`*🌍 ᴘʟᴀᴛғᴏʀᴍ:* ${platform}\n` +
+   `*♥︎© ᴏᴡɴᴇʀ: 𝐁ʟᴀǫ-ʙᴏʏ ᴛᴇᴄʜ}`;
 
 	return sendMessageWTyping(from, { text: response }, { quoted: msg });
 };
